@@ -8,8 +8,6 @@ import getStrings from "../../utils/strings";
 import themeLight from "../../themes/light";
 import themeDark from "../../themes/dark";
 
-import { TypeStrings } from "../../models/strings";
-
 type TypeUiContext = {
   strings: TypeStrings;
   theme: DefaultTheme;
@@ -20,10 +18,10 @@ type TypeUiContext = {
 
 const UiContext = createContext<TypeUiContext>({} as TypeUiContext);
 
-export const UiProvider: React.FC = ({ children }) => {
+export const UiProvider: React.FC<DefaultProps> = ({ children }) => {
   const tokenKey = "@tccapp:token:";
 
-  const [strings, setStrings] = useState<TypeStrings>({});
+  const [strings, setStrings] = useState<Strings>({});
   const [theme, setTheme] = useState<DefaultTheme>(themeLight);
   const [language, setLanguage] = useState<string>("pt-br");
   const [loading, setLoading] = useState<boolean>(false);

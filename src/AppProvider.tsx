@@ -5,7 +5,7 @@ import { UiProvider } from "./contexts/ui";
 
 import { SafeAreaProvider } from "react-native-safe-area-context";
 
-const AppProvider: React.FC = ({ children }) => {
+const AppProvider: React.FC<DefaultProps> = ({ children }) => {
   return (
     <SafeAreaProvider>
       <UiProvider>

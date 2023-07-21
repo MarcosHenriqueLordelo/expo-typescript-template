@@ -1,1 +1,1 @@
-export type TypeStrings = {};
+interface Strings {}

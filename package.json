@@ -32,5 +32,11 @@
     "@types/styled-components-react-native": "^5.1.1",
     "typescript": "^5.1.3"
   },
-  "private": true
+  "private": true,
+  "prettier": {
+    "trailingComma": "es5",
+    "tabWidth": 2,
+    "semi": true,
+    "singleQuote": true
+  }
 }

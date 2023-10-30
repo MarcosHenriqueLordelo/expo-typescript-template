@@ -9,7 +9,7 @@ import themeLight from "../../themes/light";
 import themeDark from "../../themes/dark";
 
 type TypeUiContext = {
-  strings: TypeStrings;
+  strings: Strings;
   theme: DefaultTheme;
   language: string;
   loading: boolean;
